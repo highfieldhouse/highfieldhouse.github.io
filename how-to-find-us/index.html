@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,6 +53,7 @@
 		href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fhow-to-find-us%2F&#038;format=xml" />
 	<meta name="google-site-verification" content="HWu4KHF6d02u_5RRhsMeNhRAiEIBprOzQlptnyP9H5U">
 </head>
+
 <body class="page-template-default page page-id-17 not-multi-author display-header-text comments-closed">
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
@@ -175,28 +177,28 @@
 			<!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
+	<!-- Matomo -->
 	<script type="text/javascript">
-< !--//-->
-	< ![CDATA[//><!--
-var _gaq = _gaq || []; _gaq.push(["_setAccount", "UA-41058611-1"]); _gaq.push(["_setDomainName", "none"]); _gaq.push(["_setAllowLinker", true]); _gaq.push(["_trackPageview"]); (function () { var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true; ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s); })();
-//--><!]]>
-	</script>
-	<script>
+		var _paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
 		(function () {
-			var loggedIn = document.body.classList.contains('login');
-			var loggingIn = document.body.classList.contains('logged-in');
-			var editing = document.location.hostname.match(/(^|\.)edit\./);
-			if (editing && !loggedIn && !loggingIn) {
-				document.location = '/wp-admin/';
-			}
+			var u = "//matomo.rnlds.com/";
+			_paq.push(['setTrackerUrl', u + 'matomo.php']);
+			_paq.push(['setSiteId', '1']);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
 		})();
 	</script>
+	<!-- End Matomo Code -->
 	<link rel='stylesheet' id='wpgmaps-style-css'
 		href='/wp-content/plugins/wp-google-maps/css/wpgmza_style.css?ver=6.4.03' type='text/css' media='1' />
 	<style id='wpgmaps-style-inline-css' type='text/css'>
 		.wpgmza_map img {
 			max-width: none;
 		}
+
 		.wpgmza_widget {
 			overflow: auto;
 		}
@@ -222,4 +224,5 @@ var _gaq = _gaq || []; _gaq.push(["_setAccount", "UA-41058611-1"]); _gaq.push(["
 	</script>
 	<script type='text/javascript' src='/wp-content/plugins/wp-google-maps/js/wpgmaps.js?ver=6.4.03b'></script>
 </body>
+
 </html>
