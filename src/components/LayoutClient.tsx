@@ -27,16 +27,16 @@ export default function LayoutClient({ children }: LayoutClientProps) {
           <Link className={isActive('/')} href="/">
             About
           </Link>
-          <Link className={isActive('/breakfast')} href="/breakfast/">
+          <Link className={isActive('/breakfast/')} href="/breakfast/">
             Breakfast
           </Link>
-          <Link className={isActive('/prices')} href="/prices/">
+          <Link className={isActive('/prices/')} href="/prices/">
             Prices
           </Link>
-          <Link className={isActive('/how-to-find-us')} href="/how-to-find-us/">
+          <Link className={isActive('/how-to-find-us/')} href="/how-to-find-us/">
             Map
           </Link>
-          <Link className={isActive('/contact-us')} href="/contact-us/">
+          <Link className={isActive('/contact-us/')} href="/contact-us/">
             Contact
           </Link>
         </ul>
