@@ -1,14 +1,14 @@
-import Layout from '../components/Layout';
+import LayoutClient from '../components/LayoutClient';
 import Link from 'next/link';
 
-export default function Custom404() {
+export default function NotFound() {
   return (
-    <Layout title="Page Not Found: Highfield House">
+    <LayoutClient>
       <h2>404 - Page Not Found</h2>
       <p>Sorry, the page you are looking for does not exist.</p>
       <p>
         <Link href="/">Return to homepage</Link>
       </p>
-    </Layout>
+    </LayoutClient>
   );
 }

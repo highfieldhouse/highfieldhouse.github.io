@@ -1,8 +1,13 @@
-import Layout from '../components/Layout';
+import LayoutClient from '../../components/LayoutClient';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Breakfast: Highfield House',
+};
 
 export default function Breakfast() {
   return (
-    <Layout title="Breakfast: Highfield House">
+    <LayoutClient>
       <h2>Breakfast</h2>
       <div className="md:flex">
         <div className="flex-1 md:mr-16">
@@ -39,6 +44,6 @@ export default function Breakfast() {
           <p><img src="/images/Benedict.jpg" alt="Eggs Benedict" /></p>
         </div>
       </div>
-    </Layout>
+    </LayoutClient>
   );
 }

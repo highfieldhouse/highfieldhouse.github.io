@@ -1,8 +1,13 @@
-import Layout from '../components/Layout';
+import LayoutClient from '../../components/LayoutClient';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'How to find us: Highfield House',
+};
 
 export default function HowToFindUs() {
   return (
-    <Layout title="How to find us: Highfield House">
+    <LayoutClient>
       <h2>How to find us…</h2>
       <div className="md:flex">
         <div className="flex-1 md:mr-16">
@@ -43,6 +48,6 @@ export default function HowToFindUs() {
           </small>
         </div>
       </div>
-    </Layout>
+    </LayoutClient>
   );
 }

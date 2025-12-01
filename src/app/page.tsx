@@ -1,9 +1,9 @@
-import Layout from '../components/Layout';
+import LayoutClient from '../components/LayoutClient';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <Layout>
+    <LayoutClient>
       <h2>Welcome to Highfield House</h2>
       <div className="md:flex">
         <div className="flex-1 md:mr-16">
@@ -45,6 +45,6 @@ export default function Home() {
           <p><img src="/images/190123-5Mont-029-768x513.jpg" alt="Exterior view" /></p>
         </div>
       </div>
-    </Layout>
+    </LayoutClient>
   );
 }
