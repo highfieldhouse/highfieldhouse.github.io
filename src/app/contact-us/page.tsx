@@ -1,4 +1,3 @@
-import LayoutClient from '../../components/LayoutClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function ContactUs() {
   return (
-    <LayoutClient>
+    <>
       <h2>Contact us</h2>
       <p>To make a booking or enquiry, please get in touch:</p>
       <ul className="list">
@@ -19,6 +18,6 @@ export default function ContactUs() {
           Email <a href="mailto:email@highfieldsheringham.com">email@highfieldsheringham.com</a>
         </li>
       </ul>
-    </LayoutClient>
+    </>
   );
 }

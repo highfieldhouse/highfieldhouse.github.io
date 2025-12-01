@@ -1,4 +1,3 @@
-import LayoutClient from '../../components/LayoutClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function Prices() {
   return (
-    <LayoutClient>
+    <>
       <h2>Room rates 2025: bed &amp; breakfast</h2>
       <div className="md:flex">
         <div className="flex-1 mr-16">
@@ -60,6 +59,6 @@ export default function Prices() {
           </p>
         </div>
       </div>
-    </LayoutClient>
+    </>
   );
 }

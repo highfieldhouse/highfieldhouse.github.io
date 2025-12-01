@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LayoutClient from "../../components/LayoutClient";
 
 interface PreviewPage {
   title: string;
@@ -19,7 +18,7 @@ const previewPages: PreviewPage[] = [
 
 export default function PreviewPage() {
   return (
-    <LayoutClient>
+    <>
       {previewPages.map((preview) => (
         <Link
           key={preview.path}
@@ -68,6 +67,6 @@ export default function PreviewPage() {
           </div>
         </Link>
       ))}
-    </LayoutClient>
+    </>
   );
 }

@@ -1,4 +1,3 @@
-import LayoutClient from '../../components/LayoutClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function Breakfast() {
   return (
-    <LayoutClient>
+    <>
       <h2>Breakfast</h2>
       <div className="md:flex">
         <div className="flex-1 md:mr-16">
@@ -44,6 +43,6 @@ export default function Breakfast() {
           <p><img src="/images/Benedict.jpg" alt="Eggs Benedict" /></p>
         </div>
       </div>
-    </LayoutClient>
+    </>
   );
 }
